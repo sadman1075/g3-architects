@@ -2,8 +2,112 @@
 
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight:400 ;
-  font-style: norm;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: norm;
 }
+/* dark1 */
+.text-dark {
+    color: #131313;
+}
+
+/* dark 2 */
+
+.text-gray {
+    color: #424242;
+}
+
+/* dark 3 */
+.text-light-gray {
+    color: #727272
+}
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 240px 102px 228px;
+    align-items: center;
+
+}
+
+.brandName {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav_links {
+    display: flex;
+
+}
+
+.nav_links li {
+    list-style: none;
+    margin-right: 40px;
+
+
+}
+
+.nav_links li a {
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+
+
+.navbar,.banner {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.banner-name{
+    font-size: 4rem;
+    font-weight:bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.banner-description{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 26px;
+}
+.banner-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+.btn{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 21px 25px 21px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+
+@media screen and (max-width:576px) {
+    
+    .navbar,.nav_links{
+        flex-direction: column;
+    }
+
+    .banner-name{
+        font-size: 2rem;
+    }
+}
+
