@@ -7,6 +7,7 @@
     font-weight: 400;
     font-style: norm;
 }
+
 /* dark1 */
 .text-dark {
     color: #131313;
@@ -23,10 +24,19 @@
     color: #727272
 }
 
+/* orange */
+.text-orange {
+    color: rgba(255, 144, 14, 1);
+}
+
 .bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+main {
+    max-width: 1440px;
+    margin: 0px auto;
+}
 
 .navbar {
     display: flex;
@@ -61,28 +71,32 @@
 
 
 
-.navbar,.banner {
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0px auto;
 }
 
-.banner-name{
+.banner-name {
     font-size: 4rem;
-    font-weight:bold;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 5px;
 }
-.banner-description{
+
+.banner-description {
     font-size: 1rem;
     text-align: center;
     line-height: 26px;
 }
-.banner-btn{
+
+.banner-btn {
     display: flex;
     justify-content: center;
     margin-top: 32px;
 }
-.btn{
+
+.btn {
     background-color: rgba(255, 144, 14, 1);
     color: white;
     padding: 21px 25px 21px 25px;
@@ -99,15 +113,203 @@
     margin-bottom: 45px;
 }
 
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 73px;
+    margin-top: 85px;
+    margin-bottom: 130px;
+
+
+}
+
+.features-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+
+}
+
+.features-title {
+    font-size: 2.8rem;
+    margin-bottom: 0px;
+
+}
+
+.features-description {
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+
+.exprence {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.exp-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 45px;
+}
+
+.exp-description {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.exp-img{
+    width: 100%;
+    height: 100%;
+}
+
+.fact-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 130px;
+
+}
+
+.fact-description {
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+
+.fact-info {
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.fact-details {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0px;
+
+}
+
+.fact-info div {
+    text-align: center;
+    padding: 45px 37px;
+    border: 1px solid rgba(255, 144, 14, 1);
+}
+
+
+
+
+.sponsor-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 0px;
+}
+
+.sponsor-description {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.sponsor-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.footer {
+    max-width: 1440px;
+    margin: 130px auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgba(255, 244, 231, 1);
+    padding: 39px 39px;
+    text-align: center;
+}
+
+/* small device */
 
 @media screen and (max-width:576px) {
-    
-    .navbar,.nav_links{
+
+    .navbar,
+    .nav_links {
         flex-direction: column;
     }
 
-    .banner-name{
+    .banner-name {
         font-size: 2rem;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .features-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features-info {
+        margin: 0px 35px;
+    }
+    .exprence{
+        flex-direction: column;
+    }
+
+    .sponsor-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .fact-info {
+        flex-direction: column;
+        gap: 30px;
     }
 }
 
+/* medium device  */
+
+@media screen and (min-width:576px) and (max-width:990px) {
+    .features {
+        flex-direction: column;
+
+
+    }
+
+    .features-info {
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+    .exprence{
+        flex-direction: column;
+    }
+
+    .sponsor-info {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .fact-info {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+
+}
