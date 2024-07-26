@@ -163,9 +163,26 @@ main {
     margin-top: 10px;
 }
 
-.exp-img{
-    width: 100%;
-    height: 100%;
+
+
+.exp-btn {
+    background-color: rgba(255, 144, 14, 1);
+    border: none;
+    border-radius: 5px;
+    margin-left: -70px;
+    margin-top: -100px;
+}
+
+.exp-number {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.exp-h3 {
+    color: white;
+    font-size: 1.5rem;
+
 }
 
 .fact-title {
@@ -268,7 +285,13 @@ main {
     .features-info {
         margin: 0px 35px;
     }
-    .exprence{
+
+    .features {
+
+        margin-bottom: 50px;
+    }
+
+    .exprence {
         flex-direction: column;
     }
 
@@ -280,6 +303,19 @@ main {
     .fact-info {
         flex-direction: column;
         gap: 30px;
+    }
+
+    .exp-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .exp-btn {
+        background-color: rgba(255, 144, 14, 1);
+        border: none;
+        border-radius: 5px;
+        margin-left: 0px;
+        margin-top: -100px;
     }
 }
 
@@ -297,9 +333,16 @@ main {
         margin-right: 100px;
 
     }
-    .exprence{
+
+    .features {
+
+        margin-bottom: 50px;
+    }
+
+    .exprence {
         flex-direction: column;
     }
+
 
     .sponsor-info {
         flex-wrap: wrap;
@@ -310,6 +353,19 @@ main {
         flex-wrap: wrap;
         gap: 30px;
     }
-    
+
+    .exp-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .exp-btn {
+        background-color: rgba(255, 144, 14, 1);
+        border: none;
+        border-radius: 5px;
+        margin-left: 0px;
+        margin-top: -100px;
+    }
+
 
 }
